@@ -4,3 +4,5 @@
 - task: 
   - name: centos
   - status: started
+  - service: nginx 
+  - status: enabled 
