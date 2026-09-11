@@ -1,8 +1,4 @@
 ---
-- name: creating ec2
-- hosts: localhost 
-- task: 
-  - name: centos
-  - status: started
-  - service: apache2
-  - status: enabled 
+- name: iam creation role
+- tasks: testing
+- host: localhost 
