@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: new server
+
+Resources:
+  MyInstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow SSH 
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0ac7b260cf76d8865
+      InstanceType: t3.micro
+      KeyName: 9-30am-july-26
+      SecurityGroupIds:
+        - !Ref MyInstanceSecurityGroup
+      Tags:
+        - Key: Name
+          Value: 1130am-srv
+
