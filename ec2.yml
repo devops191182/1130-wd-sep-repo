@@ -22,5 +22,5 @@ Resources:
         - !Ref MyInstanceSecurityGroup
       Tags:
         - Key: Name
-          Value: 1130am-srv
+          Value: Tejas
 
