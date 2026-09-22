@@ -16,6 +16,7 @@ Resources:
               - 's3:ListAllMyBuckets'
               - 's3:PutObject'
               - 'ec2:Describe*'
+              - 's3:DeleteObject'
             Resource: 
               - '*'
 
