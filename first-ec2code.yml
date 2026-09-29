@@ -1,4 +1,0 @@
----
-- name: iam creation role
-- tasks: testing
-- host: localhost 
