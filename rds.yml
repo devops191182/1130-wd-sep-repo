@@ -1,0 +1,6 @@
+---
+- name: rds creating
+- hosts:  localhost
+  task: 
+  - name: mysql 
+  - service: started
